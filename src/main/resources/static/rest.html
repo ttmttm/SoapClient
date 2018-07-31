@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<button>get Contacts method</button>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.get("/contacts", function(data, status){
+            document.write("Data: " + data + "\nStatus: " + status);
+        });
+    });
+});
+</script>
+
+</body>
+</html>
