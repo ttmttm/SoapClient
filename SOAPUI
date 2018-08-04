@@ -1,0 +1,7 @@
+use below at OnREquest Script for REST services to log the request json while mocking Rest service.
+
+log.info(mockRequest.getRequestContent())
+log.info "--Headers--"
+mockRequest.requestHeaders.each {log.info it}
+log.info "--Body--"
+log.info mockRequest.requestContent
